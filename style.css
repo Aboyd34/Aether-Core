@@ -1,3 +1,44 @@
+.branding-container {
+  position: relative;
+  display: inline-block;
+}
+
+.logo-emblem {
+  width: 120px;
+  height: auto;
+  margin-bottom: 20px;
+  animation: pulseGlow 4s ease-in-out infinite;
+  transition: transform 0.3s ease;
+}
+
+.logo-emblem:hover {
+  transform: scale(1.05);
+}
+
+.emblem-meta {
+  position: absolute;
+  bottom: -28px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: rgba(0, 198, 255, 0.1);
+  color: #9adfff;
+  font-size: 12px;
+  padding: 6px 12px;
+  border-radius: 4px;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  pointer-events: none;
+}
+
+.branding-container:hover .emblem-meta {
+  opacity: 1;
+}
+
+@keyframes pulseGlow {
+  0%   { filter: drop-shadow(0 0 5px #00c6ff); }
+  50%  { filter: drop-shadow(0 0 20px #9a00ff); }
+  100% { filter: drop-shadow(0 0 5px #00c6ff); }
+}
 body {
     margin: 0;
     padding: 0;
