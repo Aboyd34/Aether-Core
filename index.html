@@ -1,35 +1,19 @@
-<!DOCTYPE html>
-<html lang="en">
-<body>
-<header class="hero">
-    <div class="branding-container">
-  <img src="branding.jpeg" alt="Aether emblem" class="logo-emblem" />
-  <div class="emblem-meta">Grok Identity Module</div>
-</div>
-  <img src="branding.jpeg" alt="Aether emblem" class="logo-emblem" />
-  <h1 class="logo-text">AETHER</h1>
-  <p class="tagline">Communication Without Witnesses</p>
-  <a href="#principles" class="cta">Discover More</a>
-</header>
+.logo-text {
+  font-family: 'Orbitron', sans-serif;
+  font-size: 3rem;
+  color: #00ffe0;
+  text-shadow: 0 0 10px #00ffe0, 0 0 20px #ff00ff;
+}
 
-    <section class="core">
-        <h2>Privacy Without Permission</h2>
-        <p>Aether is a censorship-resistant, metadata-free communication network
-        engineered for people living under surveillance.</p>
-    </section>
-
-    <section class="features">
-        <h2>What Makes Aether Different</h2>
-        <ul>
-            <li>Zero Metadata — No accounts, logs, or histories.</li>
-            <li>Censorship Resistance — Distributed routing + obfuscation.</li>
-            <li>Zero-Knowledge Verification — Prove without revealing.</li>
-            <li>Ephemeral Sessions — Nothing stored anywhere.</li>
-        </ul>
-    </section>
-
-    <footer>
-        <p>© 2025 Aether Project — Open Source Initiative</p>
-    </footer>
-</body>
-</html>
+.cta {
+  background: linear-gradient(90deg, #ff00ff, #00ffe0);
+  padding: 0.8rem 1.5rem;
+  border-radius: 4px;
+  color: #000;
+  text-transform: uppercase;
+  font-weight: bold;
+  transition: transform 0.2s ease-in-out;
+}
+.cta:hover {
+  transform: scale(1.05);
+}
